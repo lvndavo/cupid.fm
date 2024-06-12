@@ -8,7 +8,7 @@ function createWindow(): void {
   const mainWindow = new BrowserWindow({
     width: 900,
     height: 670,
-    title: 'Spotify Cupid',
+    title: 'cupid.fm',
     show: false,
     autoHideMenuBar: true,
     vibrancy: 'under-window',

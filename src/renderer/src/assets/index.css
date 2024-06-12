@@ -9,7 +9,7 @@
       html,
       body {
         @apply h-full select-none overflow-hidden;
-        @apply bg-transparent;
-        @apply font-mono antialiased text-white;
+        @apply bg-gradient-radial from-green-950/30 to-black/20;
+        @apply font-sans antialiased text-white;
       }
 }

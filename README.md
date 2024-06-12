@@ -1,4 +1,4 @@
-# spotify-cupid
+# cupid.fm
 
 An Electron application with React and TypeScript
 
