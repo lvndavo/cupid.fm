@@ -3,13 +3,41 @@
 @tailwind utilities;
 
 @layer base {
-    #root {
-        @apply h-full;
-      }
-      html,
-      body {
-        @apply h-full select-none overflow-hidden;
-        @apply bg-gradient-radial from-green-950/30 to-black/20;
-        @apply font-sans antialiased text-white;
-      }
+  #root {
+      @apply h-full;
+    }
+  html,
+  body {
+    @apply h-full select-none overflow-hidden;
+    @apply bg-gradient-radial from-green-950/30 to-black/20;
+    @apply font-sans antialiased text-white;
+  }
+  .page-container {
+    @apply h-full m-3
+  }
+}
+
+@layer components {
+  .btn {
+    @apply rounded-3xl
+  }
+  .action-card {
+    @apply rounded-3xl
+  }
+}
+@keyframes bounce {
+  0% {transform: translateY(0);} 
+ 100% {transform: translateY(-5px);} 
+}
+
+#begin-button:hover {
+  filter: drop-shadow(0px 0px 25px #c9e7ad)
+}
+
+.action-card:hover {
+  box-shadow: 0px 0px 15px #52606b80;
+}
+
+.bouncing-text {
+  animation: 900ms infinite alternate bounce;
 }
