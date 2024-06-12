@@ -1,6 +1,7 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import { FaLongArrowAltLeft } from 'react-icons/fa'
+import { GiLoveSong } from 'react-icons/gi'
+import { GiAudioCassette } from 'react-icons/gi'
 
 export const Begin = () => {
   return (
@@ -10,25 +11,27 @@ export const Begin = () => {
       </Link>
 
       <h1 className="bouncing-text text-center text-2xl font-semibold drop-shadow-lg">
-        What would you like to do?
+        What are you looking for?
       </h1>
 
-      <div className="flex gap-3 mt-10">
-        <div
-          className="card action-card bg-neutral-600/10
-          hover:cursor-pointer transition-all duration-75"
-        >
-          <div className="card-body">
-            <div className="card-title">Option 1</div>
+      <div className="grid grid-cols-2 gap-5 mt-10 px-3">
+        <div className="card action-card w-fit">
+          <div className="card-body text-center">
+            <span className="self-center mb-3">
+              <GiLoveSong size="35" className="icon" />
+            </span>
+            <h2 className="card-title self-center">New Songs</h2>
+            <p>based on artists, genres, or tracks you already love</p>
           </div>
         </div>
 
-        <div
-          className="card action-card bg-neutral-600/10
-          hover:cursor-pointer transition-all duration-75"
-        >
-          <div className="card-body">
-            <div className="card-title">Option 2</div>
+        <div className="card action-card w-fit">
+          <div className="card-body text-center">
+            <span className="self-center mb-3">
+              <GiAudioCassette size="35" className="icon" />
+            </span>
+            <h2 className="card-title self-center">Curated Playlist</h2>
+            <p>based on artists, genres, or tracks you already love</p>
           </div>
         </div>
       </div>

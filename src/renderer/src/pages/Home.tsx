@@ -6,7 +6,7 @@ export const Home = () => {
   return (
     <div className="h-full flex flex-col justify-center items-center relative">
       <div className="flex text-3xl items-center">
-        <GiPiercedHeart size="35" className="text-pink-300/90" />
+        <GiPiercedHeart size="35" className="icon" />
         <h1 className="font-medium">cupid.fm</h1>
       </div>
 

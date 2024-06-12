@@ -9,7 +9,7 @@
   html,
   body {
     @apply h-full select-none overflow-hidden;
-    @apply bg-gradient-radial from-green-950/30 to-black/20;
+    @apply bg-gradient-radial from-green-900/20 to-black/5;
     @apply font-sans antialiased text-white;
   }
   .page-container {
@@ -22,7 +22,12 @@
     @apply rounded-3xl
   }
   .action-card {
-    @apply rounded-3xl
+    @apply rounded-3xl bg-neutral-400/10 shadow-inner
+    hover:bg-neutral-400/20 hover:cursor-pointer hover:shadow-xl hover:shadow-[#c9e7ad]/30
+    hover:scale-105 transition-all duration-100
+  }
+  .icon {
+    @apply text-pink-300
   }
 }
 @keyframes bounce {
@@ -34,9 +39,6 @@
   filter: drop-shadow(0px 0px 25px #c9e7ad)
 }
 
-.action-card:hover {
-  box-shadow: 0px 0px 15px #52606b80;
-}
 
 .bouncing-text {
   animation: 900ms infinite alternate bounce;
