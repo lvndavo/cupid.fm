@@ -1,7 +1,7 @@
-function App(): JSX.Element {
+const App = () => {
   return (
     <>
-      <h1>spotify cupid</h1>
+      <h1 className="">spotify cupid</h1>
     </>
   )
 }

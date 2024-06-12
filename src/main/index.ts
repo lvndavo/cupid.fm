@@ -12,6 +12,7 @@ function createWindow(): void {
     show: false,
     autoHideMenuBar: true,
     vibrancy: 'under-window',
+    visualEffectState: 'active',
     ...(process.platform === 'linux' ? { icon } : {}),
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
