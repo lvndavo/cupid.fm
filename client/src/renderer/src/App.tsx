@@ -1,5 +1,5 @@
 import { HashRouter, Routes, Route } from 'react-router-dom'
-import { Home, Begin } from './pages'
+import { Home, Begin, SongSearchOptions } from './pages'
 
 const App = () => {
   return (
@@ -7,6 +7,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/begin" element={<Begin />} />
+        <Route path="/songsearchoptions" element={<SongSearchOptions />} />
       </Routes>
     </HashRouter>
   )

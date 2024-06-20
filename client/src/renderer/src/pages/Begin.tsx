@@ -5,7 +5,7 @@ import { GiAudioCassette } from 'react-icons/gi'
 
 export const Begin = () => {
   return (
-    <div className="page-container relative flex flex-col justify-center items-center">
+    <div className="page-container flex flex-col justify-center items-center">
       <Link to="/" className="btn btn-sm btn-ghost absolute top-0 left-0">
         <FaLongArrowAltLeft /> Home
       </Link>
@@ -14,8 +14,8 @@ export const Begin = () => {
         What are you looking for?
       </h1>
 
-      <div className="grid grid-cols-2 gap-5 mt-10 px-3">
-        <div className="card action-card w-fit">
+      <div className="flex flex-col md:grid md:grid-cols-2 gap-5 mt-10 px-3">
+        <Link to="/songsearchoptions" className="card action-card w-fit">
           <div className="card-body text-center">
             <span className="self-center mb-3">
               <GiLoveSong size="35" className="icon" />
@@ -23,7 +23,7 @@ export const Begin = () => {
             <h2 className="card-title self-center">New Songs</h2>
             <p>based on artists, genres, or tracks you already love</p>
           </div>
-        </div>
+        </Link>
 
         <div className="card action-card w-fit">
           <div className="card-body text-center">

@@ -13,7 +13,7 @@
     @apply font-sans antialiased text-white;
   }
   .page-container {
-    @apply h-full m-3
+    @apply h-full m-3 relative
   }
 }
 
